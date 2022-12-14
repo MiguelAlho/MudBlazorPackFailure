@@ -2,10 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
+
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-	<PackAsTool>true</PackAsTool>
-	<IsPackable>true</IsPackable>
+    
+    <PackAsTool>true</PackAsTool>
+    <IsPackable>true</IsPackable>
+
+    <IncludeContentInPack>true</IncludeContentInPack>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MudBlazor" Version="6.1.5" />
+  </ItemGroup>
 
 </Project>

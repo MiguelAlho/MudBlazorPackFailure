@@ -3,6 +3,7 @@ namespace DotnetToolStaticFilesNotFound
     using DotnetToolStaticFilesNotFound.Data;
     using Microsoft.AspNetCore.Components;
     using Microsoft.AspNetCore.Components.Web;
+    using MudBlazor.Services;
 
     public class Program
     {
@@ -14,6 +15,8 @@ namespace DotnetToolStaticFilesNotFound
             builder.Services.AddRazorPages();
             builder.Services.AddServerSideBlazor();
             builder.Services.AddSingleton<WeatherForecastService>();
+            
+            builder.Services.AddMudServices();
 
             var app = builder.Build();
 
